@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Retando tú lógica</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div>
+		<div class="number">
+			<label>1er Número</label>
+			<input type="number" placeholder="Número Positivo" id="num1">
+			<label>2do Número</label>
+			<input type="number" placeholder="Número Positivo" id="num2">
+		</div>
+		<br>
+		<div class="container-card">
+			<div class="card">
+				<label>Hallar el menor de dos números enteros positivos</label><br>
+				<img src="data:image/png;base64,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" alt="menor" srcset="">
+				<br>
+				<button onclick="options('menor')">Mostrar Resultado</button>
+			</div>
+			<br>
+			<div class="card">
+				<label>Determinar si los números ingresados son iguales</label><br>
+				<img src="https://w7.pngwing.com/pngs/895/744/png-transparent-equals-sign-computer-icons-equality-equal-sign-rectangle-black-desktop-wallpaper-thumbnail.png" alt="igual" srcset="">
+				<br>
+				<button onclick="options('igual')">Ver Resultado</button>
+			</div>
+			<br>
+			<div class="card">
+				<label>Intercambiar los valores de los dos números</label><br>
+				<img src="https://w7.pngwing.com/pngs/1021/654/png-transparent-computer-icons-font-awesome-arrow-exchange-angle-exchange-black-thumbnail.png" alt="intercambio" srcset="">
+				<br>
+				<button onclick="options('intercambio')">Ver Resultado</button>
+			</div>
+			<br>
+			<div class="card">
+				<label>Sumar los dos números</label><br>
+				<img src="https://w7.pngwing.com/pngs/528/654/png-transparent-plus-and-minus-signs-addition-mathematics-plus-rectangle-plus-cross-thumbnail.png" alt="sumar" srcset="">
+				<br>
+				<button onclick="options('sumar')">Ver Resultado</button>
+			</div>
+
+		</div>
+	</div>
+	<script src="scripts.js"></script>
+</body>
+</html>

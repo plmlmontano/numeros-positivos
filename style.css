@@ -1,0 +1,55 @@
+.number{
+    display: inline-block;
+    margin: 0 50px;
+}
+
+.number label {
+    font-size: 20px;
+    color: black;
+    padding-right: 10px;
+}
+
+.container-card {
+    position: relative;
+    perspective: 1000px;
+    
+    width: 300px;
+    height: 380px;
+    margin: 30px;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.card{
+    position: relative;
+    background-color: black;
+    width:200px;
+    height:250px;
+    margin: 30px;
+    font-size: 25px;
+    padding: 5px;
+    margin-top: 20px;
+    color: white;
+}
+.card img {
+    margin-top: 10px;
+    width: 157px;
+    height: 77px;
+    padding: 7px 19px 12px;
+}
+
+.card button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 1s ease;
+}
+  
+.card button:hover {
+    background: #ffffff;
+    color: red;
+}
+  
