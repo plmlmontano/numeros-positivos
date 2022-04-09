@@ -3,7 +3,7 @@ let num2 = document.getElementById('num2')
 
 // Validar si un numero es positivo
 const ValidationNumber = (n1, n2) => {
-    if (n1 < 0 || n2 > 0) {
+    if (n1 > 0  && n2 > 0 && n1 % 1 === 0 && n2 % 1 === 0) {
         return false
     } else {
         return true
@@ -33,7 +33,11 @@ const exchange = (n1, n2) => {
     nu1 = nu2
     nu2 = aux
     
-    alert(`El primer numero ${n1} ahora es ${nu1} y el segundo numero ${n2} ahora es ${nu2}`)
+    alert(`El primer numero ${n1} ahora es ${nu1} y el segundo numero ${n2} ahora es ${nu2}, dale aceptar para ver el cambio de los inputs`)
+    
+    // Cambio en los inputs al momento de hacer el cambio
+    num1.value = nu1
+    num2.value = nu2
 }
 
 const numberMinor = (n1, n2) => {
